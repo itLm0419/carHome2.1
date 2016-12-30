@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 关闭动态方法调用 -->
+	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="false" /> -->
+	<!-- 开启开发者模式，可以有友好的错误提示 -->
+    <constant name="struts.devMode" value="true" />
+	<package name="carhome" extends="json-default,struts-default" namespace="/">
+	<global-results>
+		<result name="noUser-error">
+		/login.jsp
+		</result>
+	</global-results>
+		<action name="carTypeAction_*" class="carTypeAction" method="{1}">
+			<result name="toCarTypePage">/carType.jsp</result>
+		</action>
+		
+		<action name="ProductAction_*" class="productAction" method="{1}">
+			<result name="toCarTypeProductsPage">/carTypeProducts.jsp</result>
+			<result name="toProductsPage">/productDetails.jsp</result>
+			<result name="toOilProductsPage">/oil.jsp</result>
+		</action>
+		
+		<action name="ShoppingCarAction_*" class="shoppingCarAction" method="{1}">
+			<result type="json">
+				<param name="root">jsonMap</param>
+			</result>
+			<result name="toMyCartPage">/myCart.jsp</result>
+			<result name="toShowShoppingCarAction" type="redirectAction">
+				<param name="actionName">ShoppingCarAction_showShoppingCar</param>
+				<param name="nameSpace">/</param>
+			</result>
+			<result name="toDoBuyProductsPage">/doBuyProducts.jsp</result>
+		</action>
+		<action name="OrderAction_*" class="orderAction" method="{1}">
+			<result name="toOrderSuccessPage">/doOrderSuccess.jsp</result>
+			<result name="toOrderFailPage">/doOrderFail.jsp</result>
+			<result name="toOrderSuccessAction" type="redirectAction">
+				<param name="actionName">OrderAction_orderSuccess</param>
+				<param name="nameSpace">/</param>
+			</result>
+			<result name="toOrderFailAction" type="redirectAction">
+				<param name="nameSpace">/</param>
+				<param name="actionName">OrderAction_orderFail</param>
+				<param name="message">${message}</param>
+			</result>
+			
+			
+		</action>
+		<action name="AdminCarBrandAction_*" class="adminCarBrandAction" method="{1}">
+			<result name="list-success">/WEB-INF/admin/carBrandList.jsp</result>
+			<result name="query-success">/WEB-INF/admin/showCarBrand.jsp</result>
+			<result name="update-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarBrandAction_listCarBrand?pageNow=1</param>			
+			</result>
+			<result name="del-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarBrandAction_listCarBrand</param>			
+			</result>
+			<result name="add-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarBrandAction_listCarBrand</param>			
+			</result>
+		</action>
+		
+		<action name="AdminCarTypeAction_*" class="adminCarTypeAction" method="{1}">
+			<result name="list-success">
+				/WEB-INF/admin/carTypeList.jsp
+			</result>
+			<result name="add-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarTypeAction_listCarTyeByBrand</param>
+				<param name="carBrandId">${carBrandId}</param>	
+			</result>
+			<result name="query-success">/WEB-INF/admin/showCarType.jsp</result>
+			<result name="update-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarTypeAction_listCarTyeByBrand</param>
+				<param name="pageNow">${pageNow}</param>
+				<param name="carBrandId">${carBrandId}</param>	
+			</result>
+			<result name="del-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminCarTypeAction_listCarTyeByBrand</param>
+				<param name="carBrandId">${carBrandId}</param>	
+			</result>
+		</action>
+		
+		<action name="AdminProductAction_*" class="adminProductAction" method="{1}">
+			<result name="queryKindForCar-success">/WEB-INF/admin/selectKindForCar.jsp</result>
+			<result name="queryKindForProduct-success">/WEB-INF/admin/selectKindForProduct.jsp</result>
+			<result name="listForProduct-success">/WEB-INF/admin/showProductsByKind.jsp</result>
+			<result name="listForCar-success">/WEB-INF/admin/carTypeSelectProduct.jsp</result>
+			<result name="queryAppCarType-success">/WEB-INF/admin/productSelectCarType.jsp</result>
+			<result name="productSelect-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminProductAction_queryAppCarTypeByProductId</param>
+				<param name="id">${id}</param>	
+			</result>
+			<result name="remove-success" type="redirectAction">
+				<param name="nameSpace">/</param>			
+				<param name="actionName">AdminProductAction_queryAppCarTypeByProductId</param>
+				<param name="id">${id}</param>	
+			</result>
+			
+			<result name="toProductsListPage" type="redirectAction">
+				<param name="nameSpace">/</param>
+				<param name="actionName">AdminProductAction_listProductByKind</param>
+				<param name="productKind">${productKind}</param>
+				<param name="productName">${productName}</param>
+			</result>
+			
+			<result name="returnAppProduct-success">
+				/WEB-INF/admin/carTypeSelectProduct.jsp
+			</result>
+			<result name="removeAppProductFromCarType-success" type="redirectAction">
+				<param name="nameSpace">/</param>
+				<param name="actionName">AdminProductAction_returnApplyProductsByOneCarTypeNum</param>
+				<param name="carTypeNum">${removeCarType}</param>
+				<param name="productKind">${productKind}</param>
+				<param name="productName">${productName}</param>
+				
+			</result>
+			<result name="carSelect-success" type="redirectAction">
+				<param name="nameSpace">/</param>
+				<param name="actionName">AdminProductAction_returnApplyProductsByOneCarTypeNum</param>
+				<param name="carTypeNum">${carTypeNum}</param>
+				<param name="productKind">${productKind}</param>
+				<param name="productName">${productName}</param>
+			</result>
+		</action>
+		
+		<action name="UserAction_*" class="com.carhome.action.UserAction" method="{1}">
+			<result name="toLoginSuccessPage">/index.jsp</result>
+			<result name="toLoginFailedPage">/login.jsp</result>
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="AdminOrderAction_*" class="adminOrderAction" method="{1}">
+			<result name="list-success">/WEB-INF/admin/orderList.jsp</result>
+			<result name="toShowOrderMessPage">/WEB-INF/admin/orderDetailMess.jsp</result>
+		</action>
+		
+		<action name="SearchAction_*" class="searchAction" method="{1}">
+			<result type="json">
+				<param name="data">keywords</param>
+			</result>
+		</action>
+		
+		<action name="MatchAction_*" class="matchAction" method="{1}">
+			<result name="toMatchPage">/carTypeMatch.jsp</result>
+			<result type="json">
+				<param name="data">keywords</param>
+			</result>
+			
+			<result name="toMatchProductsForCarTypes" type="redirectAction">
+				<param name="nameSpace">/</param>
+				<param name="actionName">MatchAction_matchProductsForCarTypes</param>
+				<param name="carBrandId">${carBrandId}</param>
+			</result>
+			
+		</action>
+	</package>
+   
+</struts>

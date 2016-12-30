@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-3-5 9:04:52 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.carhome.vo.OrderProductMess" table="_ORDERPRODUCTMESS">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="product" class="com.carhome.vo.Product" fetch="join">
+            <column name="productId" />
+        </many-to-one>
+        <property name="productNum" type="java.lang.Integer">
+            <column name="PRODUCTNUM" />
+        </property>
+        <property name="totalPrice" type="java.lang.Double">
+            <column name="TOTALPRICE" />
+        </property>
+        <many-to-one name="order" class="com.carhome.vo.Order" fetch="join">
+            <column name="orderId" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,242 @@
+body{
+	margin: 0 auto;
+}
+.head{
+	width:1005px;
+	margin: 0 auto;
+	font-family:"ËÎÌå";
+	font-size:14px;
+	line-height:20px;
+}
+.head font
+{
+    font-weight:bolder;
+    font-size:20px;
+}
+.head-time{
+	width:100%;
+	background: black;
+	height:25px;
+}
+.time-key
+{
+    margin-left:13%;
+    font-size:14px;
+    color:White; 
+    line-height:20px;   
+}
+.time-value
+{
+    font-size:14px;
+    color:Yellow;
+    line-height:20px;
+}
+.time-title
+{
+    line-height:20px;
+    font-size:14px;
+    color:White;
+    float:right;
+    margin-right:13%;
+}
+.bg{
+    background: #fff;
+    background: -moz-linear-gradient(top,  #f7e5b5 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7e5b5), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #f7e5b5 0%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #f7e5b5 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #f7e5b5 0%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #f7e5b5 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e5b5', endColorstr='#ffffff',GradientType=0 );
+}
+
+.aboutStudent{
+	width:100%;
+	background: RGB(224,224,224);
+	height:200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.aboutStudent a{
+	text-decoration: none;
+	color:#594d98;
+}
+.aboutStudent a:HOVER{
+	color:blue;
+}
+.aboutStudent table{
+	width: 80%;
+}
+.aboutStudent th{
+	line-height: 50px;
+	width:20%;
+}
+.aboutStudent td{
+	line-height: 25px;
+}
+.tailDiv{
+	width:100%;
+	background: #554c86;
+	height:100px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 14px;
+	color:#d6d5d8;
+}
+.tailDiv span{
+	margin-left:150px;
+	margin-top:25px;
+	display: inline-block;
+}
+.tailDiv span1{
+	display:inline;
+	margin-left:150px;
+	line-height: 50px;
+	color:#8f8e93;
+}
+
+.loginDiv
+{
+    background-image:url("login.jpg");
+    height:567px; 
+}
+.adminLoginDiv
+{
+    background-image:url("adminLogin.jpg");
+    height:567px; 
+    }
+.text
+{
+    width:200px;
+    margin-left:50%;
+    margin-top:220px;
+    background: rgba(255,204,51, 0.5);
+}
+.password
+{
+       width:200px;
+    margin-left:50%;
+    margin-top:120px;
+    background: rgba(255,204,51, 0.5);
+    }
+.btnSubmit,.btnExit
+{
+    width:90px;
+    height:40px;
+    background:#e09240;
+    color:#8f381b;
+}
+.btnSubmit:hover,.btnExit:hover
+{
+
+   background: -moz-linear-gradient(top,  #f7e5b5 0%, RGB(224,146,64) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,RGB(224,146,64)), color-stop(100%,#913a1c));
+    background: -webkit-linear-gradient(top,  #f7e5b5 0%,RGB(224,146,64) 100%);
+    background: -o-linear-gradient(top,  #f7e5b5 0%,RGB(224,146,64) 100%);
+    background: -ms-linear-gradient(top,  #f7e5b5 0%,RGB(224,146,64) 100%);
+    background: linear-gradient(to bottom,  #f7e5b5 0%,RGB(224,146,64) 100%);        
+}
+.btnSubmit
+{
+    margin-left:45%;
+  
+    }
+ .btnExit
+ {   
+    margin-left:20px;
+
+     }
+ .logSucBg
+ {
+      position:absolute;
+     width:100%;
+     height:100%;
+     z-index:-1;
+     top:0px;
+  }
+font.username
+ {
+    color:white;
+    font-size:30px;
+    left:76%;
+    top:170px;
+    position:absolute;
+        
+ }
+ div.operateDiv
+ {
+    margin-top:250px;    
+ }
+ .operateDiv div
+ {
+    margin-left:30%;
+    background:#1a658b;
+    width:10%;    
+    margin-top:20px;
+    text-align:center;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+     box-shadow:0 10px 10px rgba(0,0,0, .5);
+    -moz-box-shadow:0 10px 10px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 10px 10px rgba(0,0,0, .5);
+ }
+  .operateDiv div:hover
+  {
+    background: -moz-linear-gradient(top,  #f7e5b5 0%, #1a658b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1a658b), color-stop(100%,#913a1c));
+    background: -webkit-linear-gradient(top,  #f7e5b5 0%,#1a658b 100%);
+    background: -o-linear-gradient(top,  #f7e5b5 0%,#1a658b 100%);
+    background: -ms-linear-gradient(top,  #f7e5b5 0%,#1a658b 100%);
+    background: linear-gradient(to bottom,  #f7e5b5 0%,#1a658b 100%);        
+  }
+ div.operateDiv *
+ {
+    
+    line-height:50px;   
+    text-decoration:none;
+    font-family:"Î¢ÈíÑÅºÚ";
+    font-size:20px;
+    color:White;
+    background:none;
+    border:none;
+ }
+.adMess
+{
+    position:absolute;
+    left:45%;
+    top:400px;   
+ } 
+.mess
+{    position:absolute;
+    left:55%;
+    top:250px;
+    }
+.mess img
+{
+  width:80%;
+ }
+ .studentHeadDiv,.studentTailDiv
+ {
+    width:100%;     
+}
+.studentTailDiv
+{
+width:100%;
+    }
+ .studentContentDiv
+ {
+     text-align:center;
+     height:200px;
+ }
+.contentLeft
+{
+    position:absolute;
+    left:0px; 
+    top:300px;   
+}
+.contentRight
+{
+    position:absolute;
+    right:0px; 
+    top:300px;    
+}

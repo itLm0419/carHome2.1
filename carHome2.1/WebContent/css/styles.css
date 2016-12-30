@@ -1,0 +1,288 @@
+*{
+	margin:0;
+	padding:0;
+}
+a img{
+	/**
+	*È¥³ýIE³¬Á´½ÓÏÂimgµÄ±ß¿ò
+	*/
+	border:none;
+}
+
+body{
+	margin:0;
+	font-family: "ï¿½ï¿½ï¿½ï¿½",arial;
+	background-image: url("img/bg_bgBody.gif");
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.bottomDiv{
+	height:100px;
+	width:100%;
+	border-top: 1px solid gray;
+	background: #FADB0E;
+}
+
+.bottomDivContanier{
+	position:relative;
+	width: 72%;
+	margin:0 auto;
+	width:980px;
+	height: 100%;
+}
+
+
+.chexing{
+	height: auto;
+	min-height: 800px;
+	border:1px solid red;
+}
+
+.logoDiv{
+	height: 20px;
+	width:auto;
+}
+
+.logoContainer{
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+}
+
+
+
+.middleDiv{
+	position:relative;	
+	min-height:650px;
+	height:auto;
+}
+
+.news{
+	height:auto;
+	width: 100%;
+	position: relative;
+	top:6%;
+	color: #000;
+	font-family: "ï¿½ï¿½ï¿½ï¿½",arial;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.newsContainer{
+	position: relative;
+	top:50px;
+	margin: 0 auto;
+	width: 980px;
+	height: auto;
+	border: 1px solid #DCDCDC;
+	margin-bottom:80px;
+	background-color: #fff;
+	box-shadow:0 10px 10px rgba(0,0,0, .5);
+	-moz-box-shadow:0 10px 10px rgba(0,0,0, .5);
+	-webkit-box-shadow:0 10px 10px rgba(0,0,0, .5);
+}
+
+.newsContainer ul{
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+.newsContainer ul li,.carTypeContent ul li img{
+	margin-left: 10px;
+	list-style-type: none;
+	display: inline;
+	line-height: 50px;
+}
+.logoDiv .title{
+	box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    border:1px solid black;
+	vertical-align:middle;
+}
+.logoDiv{
+	text-align: center;
+	padding-top: 20px;
+}
+.logoDiv span{
+	font-size: 50px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	vertical-align:middle;
+}
+.carTypeContent ul li img{
+	width:110px;
+	height:70px;
+}
+
+.carTypes{
+	height: 800px;
+}
+.newsContainer ul li img:HOVER{
+	box-shadow:0 10px 10px rgba(250,219,14,0.8);
+    -moz-box-shadow:0 10px 10px rgba(250,219,14,0.8);
+    -webkit-box-shadow:0 10px 10px rgba(250,219,14,0.8);
+    
+}
+
+.newsContainer ul li img{
+	width:10%;
+	height:11%;
+	border:none;
+	box-shadow:0 10px 10px rgba(0,0,0, .5);
+    -moz-box-shadow:0 10px 10px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 10px 10px rgba(0,0,0, .5);
+}
+
+
+.newsTop{
+	position:relative;
+	height: 70px;
+	width: 100%;
+	border-top: 3px solid #037E3D;
+	border-bottom: 1px solid #037E3D;
+	color:#037E3D;
+}
+
+.newsTop span{
+	position: absolute;
+	font-family:"Î¢ÈíÑÅºÚ";
+	font-size:30px;
+	left: 20px;
+	top:25px;
+}
+
+.topDiv{
+	position:relative;
+	background-color:#037E3D; 
+	height:60px;
+	border-bottom: 1px solid gray;
+}
+
+.topContainer{
+	position:relative;
+	margin: 0 auto;
+	width: 980px;
+	height: 33px;
+}
+
+.oilPorducts{
+	height: auto;
+	min-height: 600px;
+}
+
+.oilsContainer{
+	width: 1100px;
+	margin: 0 auto;
+	height: auto;
+	min-height:500px;
+}
+
+.tittle{
+	position:relative;
+	width:1100px;
+	height:90px;
+	margin: 0 auto;
+	background:#037E3D;
+	color: #F3D50F;
+}
+
+.tittle img{
+	position:absolute;
+	top:30%;
+	left: 90%;
+	width: 50px;
+	height: 50px;
+}
+
+.tittle span{
+	position: absolute;
+	top:65%;
+	left: 93%;
+}
+
+.tittle a:hover{
+	text-decoration: underline;
+}
+
+.tittle a{
+	color: #F3D50F;
+}
+
+.specificOilProducts{
+	width: 1100px;
+	height: auto;
+	margin:0 auto;
+}
+
+.specificOilType{
+	height: 40px;
+	color: #037E3D;
+	font-size: 20px;
+	padding-top:5px;
+	margin-top: 20px;
+	border: 1px solid #DCDCDC;	
+	border-bottom: none;
+	border-top: 3px solid #F9DB0F;
+}
+
+.specificOilProductsInfo{
+	height: auto;
+	min-height: 360px;
+	margin-bottom: 20px;
+	border: 1px solid #DCDCDC;	
+}
+
+.specificOilProductsInfo ul{
+	list-style-type: none;
+}
+
+.specificOilProductsInfo ul li{
+	margin-top:10px;
+	margin-left:20px;
+	display: inline-block;
+	margin-bottom:10px;
+	border: 1px solid #DCDCDC;
+	border-top: 3px solid #F9DB0F;
+}
+
+.specificOilProductsInfo ul li p{
+	text-align: center;
+}
+.shopCarDiv{
+	width:50px;
+	height:200px;
+	position: fixed;
+	background-color: #037E3D;
+	
+}
+
+.box{
+	padding:15px 0px 0px 15px;
+	float:left;
+}
+
+.imgDiv{
+	padding:20px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	border-shadow:0 0 5px #ccc;
+	width:auto;
+	height:50px; 
+	text-align:center;
+	box-shadow:0 5px 5px rgba(0,0,0, .5);
+    -moz-box-shadow:0 5px 5px rgba(0,0,0, .5);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0, .5);
+   	border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.imgDiv:HOVER {
+	box-shadow:0 10px 10px rgba(250,219,14,0.8);
+    -moz-box-shadow:0 10px 10px rgba(250,219,14,0.8);
+    -webkit-box-shadow:0 10px 10px rgba(250,219,14,0.8);
+}

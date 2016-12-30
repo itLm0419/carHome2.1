@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-3-9 15:13:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.carhome.vo.User" table="_users">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="phoneNum" type="java.lang.String">
+            <column name="phoneNum" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="shenFen" type="java.lang.String">
+            <column name="SHENFEN" />
+        </property>
+        <property name="zhuangTai" type="java.lang.String">
+            <column name="ZHUANGTAI" />
+        </property>
+        <property name="chePai" type="java.lang.String">
+            <column name="CHEPAI" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+    </class>
+</hibernate-mapping>

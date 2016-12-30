@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body {
+	font: 14px/1.5 'Î¢ÈíÑÅºÚ';
+	background: #f9f9f9;
+}
+
+
+.topbar {
+	height: 50px;
+	line-height: 50px;
+	background: #1A1A1A;
+	font-size: x-large;
+}
+
+.topbar a:hover {
+	color: #FFFF00;
+}
+
+.white {
+	color: White;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.bt_left {
+	padding-left: 66px;
+}
+
+.bt_right {
+	padding-right: 66px;
+}
+
+/*×ó²¿ÇøÓòcss */
+.leftquyu {
+	width: 16%;
+	height: 100%;
+	color: #000000;
+	font-size: 14px;
+	text-align: center;
+}
+
+.div1 {
+	text-align: center;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.div2 {
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	position: relative;
+	border-bottom: #ccc 1px dotted;
+}
+
+.jbsz {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 60px;
+	top: 10px;
+	background: url(../images/1.png);
+}
+
+.jbsz {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 40px;
+	top: 10px;
+	background: url(../images/1.png);
+}
+
+.xwzx {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 40px;
+	top: 10px;
+	background: url(../images/2.png);
+}
+
+.zxcp {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 40px;
+	top: 10px;
+	background: url(../images/4.png);
+}
+
+.lmtj {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 40px;
+	top: 10px;
+	background: url(../images/8.png);
+}
+
+.div3 {
+	display: none;
+	font-size: 16px;
+}
+
+.div3 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.div3 li {
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	border-bottom: #ccc 1px dotted;
+	text-align: center;
+} /*×ó²¿ÇøÓòcss */
+
+/*ÓÒ²¿ÇøÓòcss */
+.rightquyu {
+	width: 82%;
+	height: 460px;
+}
+
+.divtop {
+	height: 60px;
+	line-height: 40px;
+	cursor: default;
+	font-size: 16px;
+	padding-top: 16px;
+}
+
+.divneirong {
+	text-align: center;
+	width: 90%;
+	padding-left: 76px;
+}
+
+.rightframe {
+	width: 99%;
+	height: 460px;
+}
+
+.xianshiye {
+	padding-top: 10px;
+}
+
+.copyright {
+	padding-top: 30px;
+	margin: 0 auto;
+	text-align: center;
+	font: 14px/1.5 'Î¢ÈíÑÅºÚ';
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+.tableDiv{
+	border: 1px;
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#000000');
+
+}
+	
+	a{
+		color:RGB(8,67,144);
+		text-decoration: none;
+	}
+	
+	table a:hover{
+		color:RGB(51,135,255);
+		text-decoration: blink;
+	}

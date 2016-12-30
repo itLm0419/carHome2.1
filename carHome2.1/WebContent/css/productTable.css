@@ -1,0 +1,125 @@
+body{
+			margin: 0 auto;
+		}
+
+		table{
+			text-align: center;
+			margin:0 auto;
+			border: 1px;
+			box-shadow:0 10px 10px rgba(0,0,0, .5);
+		    -moz-box-shadow:0 10px 10px rgba(0,0,0, .5);
+		    -webkit-box-shadow:0 10px 10px rgba(0,0,0, .5);
+		}
+		table tr{
+			height:70px;
+		}
+		a{
+			color:RGB(173,46,39);
+			text-decoration: none;
+		}
+		a:hover{
+			color:red;
+			font-weight: bold;
+		}
+		h1{
+			text-align: center;
+		}
+		h1 font{
+			color:#037E3D;
+			font-family: "Î¢ÈíÑÅºÚ";
+		}
+		th{
+			background-color: #FADB0E;
+		}
+				.oil{
+			margin-top:150px;
+			width: 1200px;
+			height: 500px;
+			margin:0 auto;
+		}
+		
+		.oilProductsContainer{
+			position:relative;
+			width: 1100px;
+			height: 400px;
+			margin:0 auto;
+			margin-top:40px;
+			border: 1px solid #DCDCDC;
+			border-top:3px solid #037E3D;
+		}
+		
+		.oilProductsTop{
+			height: 20px;
+			padding: 10px;
+			color:#037E3D;
+			font-size: 15px;
+			font-weight: bold;
+			border-bottom: 1px solid #DCDCDC;
+		}
+		.oilProductContent{
+			height: 380px;
+		}
+		 .oilProductContent ul{
+			width:1050px;
+			height:340px;
+			list-style-type: none;
+		}
+		.oilProductContent ul li{
+			margin-top:15px;
+			display: inline-block;
+			border: 1px solid #DCDCDC;
+		}
+		.oilType{
+			position:relative;	
+			width: 196px;
+			height: 300px;
+		}
+		
+		.oilType img{
+			width: 182px;
+			height:160px;
+			margin-left: 10px;
+		}
+		
+		.oilType p{
+			text-align: center;
+		}
+		
+		.oilType a{
+			color:#037E3D;
+		}
+		.productKindDiv{
+			margin-top: 10px;
+		}
+		.shopCarDiv{
+	width:50px;
+	height:200px;
+	position: fixed;
+	background-color: #037E3D;
+	
+}
+.topDiv{
+	position:relative;
+	background-color:#037E3D; 
+	height:60px;
+	border-bottom: 1px solid gray;
+}
+.bottomDiv{
+	height:100px;
+	width:100%;
+	border-top: 1px solid gray;
+	background: #FADB0E;
+}
+.topContainer{
+	position:relative;
+	margin: 0 auto;
+	width: 980px;
+	height: 33px;
+}
+.bottomDivContanier{
+	position:relative;
+	width: 72%;
+	margin:0 auto;
+	width:980px;
+	height: 100%;
+}
